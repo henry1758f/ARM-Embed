@@ -72,11 +72,28 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.vb">
+    <Compile Include="ARM_IOTVMDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ARM_IOTVMDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Choose.Designer.vb">
+      <DependentUpon>Form_Choose.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Choose.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="Form_Loading.Designer.vb">
+      <DependentUpon>Form_Loading.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Loading.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Login.Designer.vb">
+      <DependentUpon>Form_Login.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -96,6 +113,15 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Form_Choose.resx">
+      <DependentUpon>Form_Choose.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Loading.resx">
+      <DependentUpon>Form_Loading.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Login.resx">
+      <DependentUpon>Form_Login.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -104,6 +130,17 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="ARM_IOTVMDataSet.xsc">
+      <DependentUpon>ARM_IOTVMDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ARM_IOTVMDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ARM_IOTVMDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ARM_IOTVMDataSet.xss">
+      <DependentUpon>ARM_IOTVMDataSet.xsd</DependentUpon>
+    </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -114,6 +151,12 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Loading.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

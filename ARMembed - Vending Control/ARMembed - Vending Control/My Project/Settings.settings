@@ -1,7 +1,22 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" UseMySettingsClassName="true">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="ARM_IOTVMConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=iotvm.database.windows.net;Initial Catalog=ARM_IOTVM;Persist Security Info=True;User ID=henry1758&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=iotvm.database.windows.net;Initial Catalog=ARM_IOTVM;Persist Security Info=True;User ID=henry1758</Value>
+    </Setting>
+    <Setting Name="ARM_IOTVMConnectionString1" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Driver={SQL Server Native Client 11.0};server=tcp:iotvm.database.windows.net,1433;uid=henry1758@iotvm;pwd=1102104112And16;app=Microsoft® Visual Studio® 2015;wsid=HENRY;database=ARM_IOTVM;encrypt=yes&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.Odbc&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Driver={SQL Server Native Client 11.0};server=tcp:iotvm.database.windows.net,1433;uid=henry1758@iotvm;pwd=1102104112And16;app=Microsoft® Visual Studio® 2015;wsid=HENRY;database=ARM_IOTVM;encrypt=yes</Value>
+    </Setting>
+  </Settings>
 </SettingsFile>
